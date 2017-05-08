@@ -56,74 +56,63 @@
 
             <TextView
                 style="@style/heading"
-                android:text="@string/playlist_heading" />
-            <View
-                style="@style/linePlaylist" />
+                android:text="Albums" />
+
+            <View style="@style/linePlaylist" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingTop="16dp">
-
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
                     <ImageButton
-                        android:id="@+id/expande"
+                        android:id="@+id/expandeAlbum1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/ic_add_circle_outline_black_18dp" />
-
                     <TextView
+                        android:layout_toRightOf="@id/expandeAlbum1"
                         style="@style/playlistName"
-                        android:layout_toRightOf="@id/expande"
-                        android:text="@string/playlist_nameame" />
-
+                        android:text="@string/album_name_list" />
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:background="@drawable/ic_play_arrow_black_18dp" />
                 </RelativeLayout>
-
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
                     <ImageButton
-                        android:id="@+id/expande1"
+                        android:id="@+id/expandeAlbum2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/ic_add_circle_outline_black_18dp" />
-
                     <TextView
+                        android:layout_toRightOf="@id/expandeAlbum2"
                         style="@style/playlistName"
-                        android:layout_toRightOf="@id/expande1"
-                        android:text="@string/playlist_nameame" />
-
+                        android:text="@string/album_name_list" />
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:background="@drawable/ic_play_arrow_black_18dp" />
                 </RelativeLayout>
-
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
                     <ImageButton
-                        android:id="@+id/expande3"
+                        android:id="@+id/expandeAlbum3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/ic_add_circle_outline_black_18dp" />
-
                     <TextView
+                        android:layout_toRightOf="@id/expandeAlbum3"
                         style="@style/playlistName"
-                        android:layout_toRightOf="@id/expande3"
-                        android:text="@string/playlist_nameame" />
-
+                        android:text="@string/album_name_list" />
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -132,14 +121,5 @@
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
-        <Button
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center_horizontal"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:id="@+id/addPlaylist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_add_white_18dp"
-            android:text="new playlist" />
     </LinearLayout>
 </ScrollView>

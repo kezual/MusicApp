@@ -18,7 +18,10 @@
         </activity>
         <activity android:name=".Music" />
         <activity android:name=".Playlist" />
-        <activity android:name=".Store"></activity>
+        <activity android:name=".Store" />
+        <activity android:name=".Songs" />
+        <activity android:name=".Albums" />
+        <activity android:name=".Artists"></activity>
     </application>
 
 </manifest>

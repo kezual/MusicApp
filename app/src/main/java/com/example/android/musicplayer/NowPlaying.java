@@ -1,6 +1,7 @@
 package com.example.android.musicplayer;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -47,5 +48,8 @@ public class NowPlaying extends AppCompatActivity {
                 startActivity(shopIntent);
             }
         });
+
+        //MediaPlayer mp = new MediaPlayer();
+
     }
 }
