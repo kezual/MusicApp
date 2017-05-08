@@ -3,4 +3,6 @@
     <string name="song_name">Blowin\' in the Wind</string>
     <string name="album_name">The Freewheelin\' Bob Dylan</string>
     <string name="artist_name">Bob Dylan</string>
+    <string name="playlist_heading">Playlist</string>
+    <string name="playlist_nameame">Playlist name</string>
 </resources>

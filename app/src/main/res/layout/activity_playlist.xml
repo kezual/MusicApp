@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -9,50 +10,140 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
+        <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
-            style="@style/toolbar">
+            style="@style/toolbar"
+            app:contentInsetStart="0dp">
 
-            <ImageButton
-                android:id="@+id/nowPlayingButton"
-                style="@style/toolbarIcon"
-                android:background="@drawable/ic_play_circle_outline_white_36dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp">
 
-            <ImageButton
-                android:id="@+id/musicButton"
-                style="@style/toolbarIcon"
-                android:background="@drawable/ic_audiotrack_white_36dp" />
+                <ImageButton
+                    android:id="@+id/nowPlayingButton"
+                    style="@style/toolbarIcon"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_play_circle_outline_white_36dp" />
 
-            <ImageButton
-                android:id="@+id/playlistButton"
-                style="@style/toolbarIcon"
-                android:background="@drawable/ic_queue_music_white_36dp" />
+                <ImageButton
+                    android:id="@+id/musicButton"
+                    style="@style/toolbarIcon"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_audiotrack_white_36dp" />
 
-            <ImageButton
-                android:id="@+id/storeButton"
-                style="@style/toolbarIcon"
-                android:background="@drawable/ic_shopping_cart_white_36dp" />
-        </LinearLayout>
+                <ImageButton
+                    android:id="@+id/playlistButton"
+                    style="@style/toolbarIcon"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_queue_music_white_36dp" />
+
+                <ImageButton
+                    android:id="@+id/storeButton"
+                    style="@style/toolbarIcon"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_shopping_cart_white_36dp" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
 
         <LinearLayout
-            android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp"
-            android:paddingTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1. Playlist name"/>
-            <TextView
+                android:paddingTop="16dp"
+                android:textAllCaps="true"
+                android:text="@string/playlist_heading"
+                android:textSize="36sp" />
+            <View
+                style="@style/linePlaylist" />
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2. Playlist name"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="3. Playlist name"/>
+                android:orientation="vertical"
+                android:paddingTop="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/expande"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_add_circle_outline_black_18dp" />
+
+                    <TextView
+                        style="@style/playlistName"
+                        android:layout_toRightOf="@id/expande"
+                        android:text="@string/playlist_nameame" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/ic_play_arrow_black_18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/expande1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_add_circle_outline_black_18dp" />
+
+                    <TextView
+                        style="@style/playlistName"
+                        android:layout_toRightOf="@id/expande1"
+                        android:text="@string/playlist_nameame" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/ic_play_arrow_black_18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/expande3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_add_circle_outline_black_18dp" />
+
+                    <TextView
+                        style="@style/playlistName"
+                        android:layout_toRightOf="@id/expande3"
+                        android:text="@string/playlist_nameame" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/ic_play_arrow_black_18dp" />
+                </RelativeLayout>
+            </LinearLayout>
         </LinearLayout>
+        <Button
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/addPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_add_white_18dp"
+            android:text="new playlist" />
     </LinearLayout>
 </ScrollView>

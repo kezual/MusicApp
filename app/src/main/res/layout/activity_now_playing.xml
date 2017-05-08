@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -9,30 +10,40 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
+        <android.support.v7.widget.Toolbar
+            app:contentInsetStart="0dp"
             android:id="@+id/toolbar"
             style="@style/toolbar">
-
+            <LinearLayout
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <ImageButton
+                android:layout_weight="1"
                 android:id="@+id/nowPlayingButton"
                 style="@style/toolbarIcon"
                 android:background="@drawable/ic_play_circle_outline_white_36dp" />
 
             <ImageButton
+                android:layout_weight="1"
                 android:id="@+id/musicButton"
                 style="@style/toolbarIcon"
                 android:background="@drawable/ic_audiotrack_white_36dp" />
 
             <ImageButton
+                android:layout_weight="1"
                 android:id="@+id/playlistButton"
                 style="@style/toolbarIcon"
                 android:background="@drawable/ic_queue_music_white_36dp" />
 
             <ImageButton
+                android:layout_weight="1"
                 android:id="@+id/storeButton"
                 style="@style/toolbarIcon"
                 android:background="@drawable/ic_shopping_cart_white_36dp" />
-        </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
 
         <ImageView
             style="@style/nowPlayCoverImage"
