@@ -15,8 +15,6 @@ public class NowPlaying extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_now_playing);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         ImageButton nowPlayingButton = (ImageButton) findViewById(R.id.nowPlayingButton);
         nowPlayingButton.setOnClickListener(new View.OnClickListener(){

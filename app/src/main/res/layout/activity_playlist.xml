@@ -3,40 +3,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        android:layout_gravity="center">
-        <ImageButton
-            android:id="@+id/nowPlayingButton"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            style="@style/toolbar">
+
+            <ImageButton
+                android:id="@+id/nowPlayingButton"
+                style="@style/toolbarIcon"
+                android:background="@drawable/ic_play_circle_outline_white_36dp" />
+
+            <ImageButton
+                android:id="@+id/musicButton"
+                style="@style/toolbarIcon"
+                android:background="@drawable/ic_audiotrack_white_36dp" />
+
+            <ImageButton
+                android:id="@+id/playlistButton"
+                style="@style/toolbarIcon"
+                android:background="@drawable/ic_queue_music_white_36dp" />
+
+            <ImageButton
+                android:id="@+id/storeButton"
+                style="@style/toolbarIcon"
+                android:background="@drawable/ic_shopping_cart_white_36dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_play_circle_filled_black_36dp" />
-        <ImageButton
-            android:id="@+id/musicButton"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="2dp"
-            android:src="@drawable/ic_audiotrack_white_36dp"/>
-        <ImageButton
-            android:id="@+id/playlistButton"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_queue_music_white_36dp"/>
-        <ImageButton
-            android:id="@+id/storeButton"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_shopping_cart_white_36dp"/>
-    </android.support.v7.widget.Toolbar>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="playlist"/>
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Playlist name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Playlist name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Playlist name"/>
+        </LinearLayout>
+    </LinearLayout>
 </ScrollView>

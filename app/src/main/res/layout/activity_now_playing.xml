@@ -3,107 +3,99 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar
+        <LinearLayout
             android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
-            android:layout_gravity="center">
+            style="@style/toolbar">
+
             <ImageButton
-                android:padding="8dp"
-                android:background="@color/colorPrimaryDark"
                 android:id="@+id/nowPlayingButton"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_play_circle_outline_white_36dp" />
+                style="@style/toolbarIcon"
+                android:background="@drawable/ic_play_circle_outline_white_36dp" />
+
             <ImageButton
-                android:padding="8dp"
-                android:background="@color/colorPrimaryDark"
                 android:id="@+id/musicButton"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:elevation="2dp"
-                android:src="@drawable/ic_audiotrack_white_36dp"/>
+                style="@style/toolbarIcon"
+                android:background="@drawable/ic_audiotrack_white_36dp" />
+
             <ImageButton
-                android:padding="8dp"
-                android:background="@color/colorPrimaryDark"
                 android:id="@+id/playlistButton"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_queue_music_white_36dp"/>
+                style="@style/toolbarIcon"
+                android:background="@drawable/ic_queue_music_white_36dp" />
+
             <ImageButton
-                android:padding="8dp"
-                android:background="@color/colorPrimaryDark"
                 android:id="@+id/storeButton"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_shopping_cart_white_36dp"/>
-        </android.support.v7.widget.Toolbar>
+                style="@style/toolbarIcon"
+                android:background="@drawable/ic_shopping_cart_white_36dp" />
+        </LinearLayout>
 
         <ImageView
-            android:padding="16dp"
-            android:adjustViewBounds="true"
-            android:maxHeight="300dp"
-            android:src="@drawable/album_cover"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/nowPlayCoverImage"
+            android:src="@drawable/album_cover" />
+
         <LinearLayout
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/timelaps">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="00:00"/>
+                android:text="00:00" />
+
             <SeekBar
-                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="03:33"/>
-        </LinearLayout>
-        <LinearLayout
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageButton
-                android:background="@drawable/background_gradient"
-                android:src="@drawable/ic_skip_previous_black_24dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageButton
-                android:src="@drawable/ic_play_arrow_black_24dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ImageButton
-                android:src="@drawable/ic_skip_next_black_24dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:text="03:33" />
         </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Song"/>
-        <TextView
+            android:gravity="center">
+
+            <ImageButton
+                style="@style/controlButtons"
+                android:background="@drawable/ic_skip_previous_black_24dp" />
+
+            <ImageButton
+                style="@style/controlButtons"
+                android:background="@drawable/ic_play_arrow_black_24dp" />
+
+            <ImageButton
+                style="@style/controlButtons"
+                android:background="@drawable/ic_skip_next_black_24dp" />
+        </LinearLayout>
+
+        <View
+            style="@style/line" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Album"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Artist"/>
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                style="@style/songInfo"
+                android:text="@string/song_name" />
+
+            <TextView
+                style="@style/songInfo"
+                android:text="@string/album_name" />
+
+            <TextView
+                style="@style/songInfo"
+                android:text="@string/artist_name" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
