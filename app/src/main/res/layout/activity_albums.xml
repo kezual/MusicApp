@@ -47,12 +47,7 @@
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:orientation="vertical">
+        <LinearLayout style="@style/container">
 
             <TextView
                 style="@style/heading"
@@ -65,54 +60,66 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingTop="16dp">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageButton
                         android:id="@+id/expandeAlbum1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/ic_add_circle_outline_black_18dp" />
+
                     <TextView
-                        android:layout_toRightOf="@id/expandeAlbum1"
                         style="@style/playlistName"
+                        android:layout_toRightOf="@id/expandeAlbum1"
                         android:text="@string/album_name_list" />
+
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:background="@drawable/ic_play_arrow_black_18dp" />
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageButton
                         android:id="@+id/expandeAlbum2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/ic_add_circle_outline_black_18dp" />
+
                     <TextView
-                        android:layout_toRightOf="@id/expandeAlbum2"
                         style="@style/playlistName"
+                        android:layout_toRightOf="@id/expandeAlbum2"
                         android:text="@string/album_name_list" />
+
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:background="@drawable/ic_play_arrow_black_18dp" />
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageButton
                         android:id="@+id/expandeAlbum3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/ic_add_circle_outline_black_18dp" />
+
                     <TextView
-                        android:layout_toRightOf="@id/expandeAlbum3"
                         style="@style/playlistName"
+                        android:layout_toRightOf="@id/expandeAlbum3"
                         android:text="@string/album_name_list" />
+
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

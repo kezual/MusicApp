@@ -4,79 +4,86 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <android.support.v7.widget.Toolbar
-            app:contentInsetStart="0dp"
             android:id="@+id/toolbar"
-            style="@style/toolbar">
+            style="@style/toolbar"
+            app:contentInsetStart="0dp">
+
             <LinearLayout
-                android:layout_marginRight="40dp"
-                android:layout_marginLeft="40dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp">
+
                 <ImageButton
-                    android:layout_weight="1"
                     android:id="@+id/nowPlayingButton"
                     style="@style/toolbarIcon"
+                    android:layout_weight="1"
                     android:background="@drawable/ic_play_circle_outline_white_36dp" />
 
                 <ImageButton
-                    android:layout_weight="1"
                     android:id="@+id/musicButton"
                     style="@style/toolbarIcon"
+                    android:layout_weight="1"
                     android:background="@drawable/ic_audiotrack_white_36dp" />
 
                 <ImageButton
-                    android:layout_weight="1"
                     android:id="@+id/playlistButton"
                     style="@style/toolbarIcon"
+                    android:layout_weight="1"
                     android:background="@drawable/ic_queue_music_white_36dp" />
 
                 <ImageButton
-                    android:layout_weight="1"
                     android:id="@+id/storeButton"
                     style="@style/toolbarIcon"
+                    android:layout_weight="1"
                     android:background="@drawable/ic_shopping_cart_white_36dp" />
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
-        <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:orientation="vertical">
+
+        <LinearLayout style="@style/container">
+
             <TextView
                 style="@style/heading"
-                android:text="Library"/>
-            <View
-                style="@style/linePlaylist" />
+                android:text="Library" />
+
+            <View style="@style/linePlaylist" />
+
             <Button
+                android:id="@+id/librarySongs"
                 style="@style/Base.Widget.AppCompat.Button.Borderless"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_queue_music_black_36dp"
-                android:text="Songs"/>
-            <View
-                style="@style/linePlaylist" />
+                android:text="Songs" />
+
+            <View style="@style/linePlaylist" />
+
             <Button
+                android:id="@+id/libraryAlbums"
                 style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_album_black_36dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Albums"/>
-            <View
-                style="@style/linePlaylist" />
+                android:text="Albums" />
+
+            <View style="@style/linePlaylist" />
+
             <Button
+                android:id="@+id/libraryArtists"
                 style="@style/Base.Widget.AppCompat.Button.Borderless"
-                android:drawableLeft="@drawable/ic_person_black_36dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Artists"/>
-            <View
-                style="@style/linePlaylist" />
+                android:drawableLeft="@drawable/ic_person_black_36dp"
+                android:text="Artists" />
+
+            <View style="@style/linePlaylist" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

@@ -4,44 +4,100 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <android.support.v7.widget.Toolbar
-            app:contentInsetStart="0dp"
             android:id="@+id/toolbar"
-            style="@style/toolbar">
+            style="@style/toolbar"
+            app:contentInsetStart="0dp">
+
             <LinearLayout
-                android:layout_marginRight="40dp"
-                android:layout_marginLeft="40dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp">
+
                 <ImageButton
-                    android:layout_weight="1"
                     android:id="@+id/nowPlayingButton"
                     style="@style/toolbarIcon"
+                    android:layout_weight="1"
                     android:background="@drawable/ic_play_circle_outline_white_36dp" />
 
                 <ImageButton
-                    android:layout_weight="1"
                     android:id="@+id/musicButton"
                     style="@style/toolbarIcon"
+                    android:layout_weight="1"
                     android:background="@drawable/ic_audiotrack_white_36dp" />
 
                 <ImageButton
-                    android:layout_weight="1"
                     android:id="@+id/playlistButton"
                     style="@style/toolbarIcon"
+                    android:layout_weight="1"
                     android:background="@drawable/ic_queue_music_white_36dp" />
 
                 <ImageButton
-                    android:layout_weight="1"
                     android:id="@+id/storeButton"
                     style="@style/toolbarIcon"
+                    android:layout_weight="1"
                     android:background="@drawable/ic_shopping_cart_white_36dp" />
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
 
+        <LinearLayout style="@style/container">
+
+            <TextView
+                style="@style/heading"
+                android:text="@string/store" />
+
+            <View style="@style/linePlaylist" />
+
+            <TextView
+                style="@style/storeSubtitle"
+                android:text="@string/trend" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp">
+
+                <TextView
+                    style="@style/storeItem"
+                    android:text="@string/playlist_nameame" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ic_add_shopping_cart_black_18dp" />
+            </RelativeLayout>
+
+            <View style="@style/linePlaylist" />
+
+            <TextView
+                style="@style/storeSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/newItems" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp">
+
+                <TextView
+                    style="@style/storeItem"
+                    android:text="@string/playlist_nameame" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ic_add_shopping_cart_black_18dp" />
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

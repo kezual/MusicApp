@@ -21,7 +21,7 @@ public class NowPlaying extends AppCompatActivity {
         nowPlayingButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-
+                return;
             }
         });
         ImageButton musicButton = (ImageButton) findViewById(R.id.musicButton);
@@ -49,7 +49,7 @@ public class NowPlaying extends AppCompatActivity {
             }
         });
 
-        //MediaPlayer mp = new MediaPlayer();
+        //MediaPlayer mp = new MediaPlayer(); --> for implementation of music player
 
     }
 }

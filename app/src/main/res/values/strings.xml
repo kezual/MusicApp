@@ -8,4 +8,7 @@
     <string name="song_name_list">Song name</string>
     <string name="album_name_list">Album name</string>
     <string name="artist_name_list">Artist name</string>
+    <string name="store">Store</string>
+    <string name="trend">Trending</string>
+    <string name="newItems">New</string>
 </resources>

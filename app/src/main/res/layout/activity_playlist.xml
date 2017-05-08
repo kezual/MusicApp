@@ -47,18 +47,14 @@
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:orientation="vertical">
+        <LinearLayout style="@style/container">
 
             <TextView
                 style="@style/heading"
                 android:text="@string/playlist_heading" />
-            <View
-                style="@style/linePlaylist" />
+
+            <View style="@style/linePlaylist" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -132,13 +128,14 @@
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
+
         <Button
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center_horizontal"
-            style="@style/Widget.AppCompat.Button.Colored"
             android:id="@+id/addPlaylist"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
             android:drawableLeft="@drawable/ic_add_white_18dp"
             android:text="new playlist" />
     </LinearLayout>
