@@ -77,6 +77,7 @@
                         android:text="@string/artist_name_list" />
 
                     <ImageButton
+                        android:id="@+id/artistPlayBtn1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -99,6 +100,7 @@
                         android:text="@string/artist_name_list" />
 
                     <ImageButton
+                        android:id="@+id/artistPlayBtn2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -121,6 +123,7 @@
                         android:text="@string/artist_name_list" />
 
                     <ImageButton
+                        android:id="@+id/artistPlayBtn3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"

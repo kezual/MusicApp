@@ -98,6 +98,12 @@
                     android:layout_alignParentEnd="true"
                     android:background="@drawable/ic_add_shopping_cart_black_18dp" />
             </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="@string/storeDescription" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

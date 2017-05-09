@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 public class NowPlaying extends AppCompatActivity {
 
@@ -49,7 +51,12 @@ public class NowPlaying extends AppCompatActivity {
             }
         });
 
-        //MediaPlayer mp = new MediaPlayer(); --> for implementation of music player
+        TextView currentDuration = (TextView) findViewById(R.id.currentDuration);
+        TextView totalDuration = (TextView) findViewById(R.id.totalDuration);
+        SeekBar progressBar = (SeekBar) findViewById(R.id.progressBar);
+        ImageButton previousSong = (ImageButton) findViewById(R.id.previousSong);
+        ImageButton playSong = (ImageButton) findViewById(R.id.playBtn);
+        ImageButton nextSong = (ImageButton) findViewById(R.id.nextSong);
 
     }
 }

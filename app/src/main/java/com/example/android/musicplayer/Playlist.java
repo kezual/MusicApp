@@ -44,5 +44,31 @@ public class Playlist extends AppCompatActivity {
                 startActivity(shopIntent);
             }
         });
+
+        ImageButton playBtn1 = (ImageButton) findViewById(R.id.playBtn1);
+        ImageButton playBtn2 = (ImageButton) findViewById(R.id.playBtn2);
+        ImageButton playBtn3 = (ImageButton) findViewById(R.id.playBtn3);
+
+        playBtn1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent playIntent = new Intent(Playlist.this,NowPlaying.class);
+                startActivity(playIntent);
+            }
+        });
+        playBtn2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent playIntent = new Intent(Playlist.this,NowPlaying.class);
+                startActivity(playIntent);
+            }
+        });
+        playBtn3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent playIntent = new Intent(Playlist.this,NowPlaying.class);
+                startActivity(playIntent);
+            }
+        });
     }
 }

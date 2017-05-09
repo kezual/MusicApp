@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import static com.example.android.musicplayer.R.id.playBtn1;
+
 public class Songs extends AppCompatActivity {
 
     @Override
@@ -43,6 +45,32 @@ public class Songs extends AppCompatActivity {
             public void onClick(View v){
                 Intent shopIntent = new Intent(Songs.this, Store.class);
                 startActivity(shopIntent);
+            }
+        });
+
+        ImageButton songsPlayBtn1 = (ImageButton) findViewById(R.id.songsPlayBtn1);
+        ImageButton songsPlayBtn2 = (ImageButton) findViewById(R.id.songsPlayBtn2);
+        ImageButton songsPlayBtn3 = (ImageButton) findViewById(R.id.songsPlayBtn3);
+
+        songsPlayBtn1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent playIntent = new Intent(Songs.this,NowPlaying.class);
+                startActivity(playIntent);
+            }
+        });
+        songsPlayBtn2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent playIntent = new Intent(Songs.this,NowPlaying.class);
+                startActivity(playIntent);
+            }
+        });
+        songsPlayBtn3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent playIntent = new Intent(Songs.this,NowPlaying.class);
+                startActivity(playIntent);
             }
         });
     }

@@ -45,5 +45,31 @@ public class Albums extends AppCompatActivity {
                 startActivity(shopIntent);
             }
         });
+
+        ImageButton albumPlayBtn1 = (ImageButton) findViewById(R.id.albumPlayBtn1);
+        ImageButton albumPlayBtn2 = (ImageButton) findViewById(R.id.albumPlayBtn2);
+        ImageButton albumPlayBtn3 = (ImageButton) findViewById(R.id.albumPlayBtn3);
+
+        albumPlayBtn1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent playIntent = new Intent(Albums.this,NowPlaying.class);
+                startActivity(playIntent);
+            }
+        });
+        albumPlayBtn2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent playIntent = new Intent(Albums.this,NowPlaying.class);
+                startActivity(playIntent);
+            }
+        });
+        albumPlayBtn3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent playIntent = new Intent(Albums.this,NowPlaying.class);
+                startActivity(playIntent);
+            }
+        });
     }
 }

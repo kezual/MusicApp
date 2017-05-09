@@ -11,4 +11,13 @@
     <string name="store">Store</string>
     <string name="trend">Trending</string>
     <string name="newItems">New</string>
+    <string name="nowPlayDescription">DESCRIPTION: This activity is used to reproduce music. It has declaration of all buttons
+    used, and the next step would be declaring onClickListeners for previous, play and next buttons. MusicPlayer class
+    should be used.</string>
+    <string name="albumsDescription">DESCRIPTION: TextView will be replaced wit ExtendableListView and the play button should send information about
+    album name and list of tracks via intent.</string>
+    <string name="playlistDescription">DESCRIPTION: TextView will be replaced wit ExtendableListView and the play button should send information about
+    playlist name and list of tracks via intent. Add playlist button is used to add new item to list.</string>
+    <string name="storeDescription">DESCRIPTION: add shoping cart is used to add items user would like to buy, after that Android Pay API is
+    used to process payment.</string>
 </resources>

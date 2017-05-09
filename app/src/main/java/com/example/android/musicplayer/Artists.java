@@ -45,5 +45,31 @@ public class Artists extends AppCompatActivity {
                 startActivity(shopIntent);
             }
         });
+
+        ImageButton artistPlayBtn1 = (ImageButton) findViewById(R.id.artistPlayBtn1);
+        ImageButton artistPlayBtn2 = (ImageButton) findViewById(R.id.artistPlayBtn2);
+        ImageButton artistPlayBtn3 = (ImageButton) findViewById(R.id.artistPlayBtn3);
+
+        artistPlayBtn1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent playIntent = new Intent(Artists.this,NowPlaying.class);
+                startActivity(playIntent);
+            }
+        });
+        artistPlayBtn2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent playIntent = new Intent(Artists.this,NowPlaying.class);
+                startActivity(playIntent);
+            }
+        });
+        artistPlayBtn3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent playIntent = new Intent(Artists.this,NowPlaying.class);
+                startActivity(playIntent);
+            }
+        });
     }
 }

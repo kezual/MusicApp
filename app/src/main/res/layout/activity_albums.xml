@@ -77,6 +77,7 @@
                         android:text="@string/album_name_list" />
 
                     <ImageButton
+                        android:id="@+id/albumPlayBtn1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -99,6 +100,7 @@
                         android:text="@string/album_name_list" />
 
                     <ImageButton
+                        android:id="@+id/albumPlayBtn2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -121,11 +123,18 @@
                         android:text="@string/album_name_list" />
 
                     <ImageButton
+                        android:id="@+id/albumPlayBtn3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:background="@drawable/ic_play_arrow_black_18dp" />
                 </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="@string/albumsDescription" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

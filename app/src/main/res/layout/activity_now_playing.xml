@@ -54,16 +54,19 @@
         <LinearLayout style="@style/timelaps">
 
             <TextView
+                android:id="@+id/currentDuration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="00:00" />
 
             <SeekBar
+                android:id="@+id/progressBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <TextView
+                android:id="@+id/totalDuration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="03:33" />
@@ -75,14 +78,17 @@
             android:gravity="center">
 
             <ImageButton
+                android:id="@+id/previousSong"
                 style="@style/controlButtons"
                 android:background="@drawable/ic_skip_previous_black_24dp" />
 
             <ImageButton
+                android:id="@+id/playBtn"
                 style="@style/controlButtons"
                 android:background="@drawable/ic_play_arrow_black_24dp" />
 
             <ImageButton
+                android:id="@+id/nextSong"
                 style="@style/controlButtons"
                 android:background="@drawable/ic_skip_next_black_24dp" />
         </LinearLayout>
@@ -109,5 +115,13 @@
                 style="@style/songInfo"
                 android:text="@string/artist_name" />
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/nowPlayDescription" />
     </LinearLayout>
 </ScrollView>
